@@ -17,6 +17,14 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "#Description-1",
+    "page": "Home",
+    "title": "Description",
+    "category": "section",
+    "text": "BBI handles the shared parts of bigWig.jl and bigBed.jl."
+},
+
+{
     "location": "#Installation-1",
     "page": "Home",
     "title": "Installation",
