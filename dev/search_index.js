@@ -9,14 +9,6 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "#BBI.jl-1",
-    "page": "Home",
-    "title": "BBI.jl",
-    "category": "section",
-    "text": ""
-},
-
-{
     "location": "#Description-1",
     "page": "Home",
     "title": "Description",
