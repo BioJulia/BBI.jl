@@ -21,7 +21,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Installation",
     "category": "section",
-    "text": "Install BBI from the Julia REPL:julia> Pkg.add(\"BBI\")If you are interested in the cutting edge of the development, please check out the master branch to try new features before release."
+    "text": "BBI is bundled into the bigWig.jl and bigBed.jl packages, so you may not need to install this package explicitly. However, if you do, you can install BBI from the Julia REPL:using Pkg\nadd(\"BBI\")\n#Pkg.add(\"BBI\") for julia prior to v0.7If you are interested in the cutting edge of the development, please check out the develop branch to try new features before release."
 },
 
 ]}
