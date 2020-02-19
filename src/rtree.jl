@@ -165,12 +165,14 @@ function overlaps(chromid, chromstart, chromend, lo, up)
     if chromid < lo[1] || (chromid == lo[1] && chromend ≤ lo[2])
         # query is strictly left
         return false
-    elseif chromid > up[1] || (chromid == up[1] && chromstart ≥ up[2])
+    end
+
+    if chromid > up[1] || (chromid == up[1] && chromstart ≥ up[2])
         # query is strictly right
         return false
-    else
-        return true
     end
+
+    return true
 end
 
 struct InMemoryRTree
@@ -183,9 +185,9 @@ struct InMemoryRTree
     function InMemoryRTree(lo, up, offset, size, children=nothing)
         if children == nothing
             return new(lo, up, offset, size)
-        else
-            return new(lo, up, offset, size, children)
         end
+
+        return new(lo, up, offset, size, children)
     end
 end
 

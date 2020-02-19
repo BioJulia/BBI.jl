@@ -91,13 +91,15 @@ function compare_intervals(x::NTuple{3,UInt32}, y::NTuple{3,UInt32})
     if x[1] < y[1] || (x[1] == y[1] && x[3] ≤ y[2])
         # strictly left
         return -1
-    elseif x[1] > y[1] || (x[1] == y[1] && x[2] ≥ y[3])
+    end
+
+    if x[1] > y[1] || (x[1] == y[1] && x[2] ≥ y[3])
         # strictly right
         return +1
-    else
-        # overlapping
-        return 0
     end
+
+    # overlapping
+    return 0
 end
 
 
@@ -163,9 +165,8 @@ function find_best_zoom(zooms::Vector{Zoom}, size::UInt32)::Union{Zoom, Nothing}
     end
     if i == 0
         return nothing
-    else
-        return zooms[i]
     end
+    return zooms[i]
 end
 
 # Compute the nubmer of overlapping bases of [x1, x2) and [y1, y2).
