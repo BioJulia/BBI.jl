@@ -1,7 +1,7 @@
 name = "BBI"
 uuid = "efc81776-cb68-11e8-2836-933446d5e9b4"
 authors = ["Ciarán O’Mara <CiaranOMara@utas.edu.au>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 BioCore = "37cfa864-2cd6-5c12-ad9e-b6597d696c81"
