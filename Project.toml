@@ -7,6 +7,11 @@ version = "0.1.1"
 BioCore = "37cfa864-2cd6-5c12-ad9e-b6597d696c81"
 Libz = "2ec943e9-cfe8-584d-b93d-64dcb6d567b7"
 
+[compat]
+BioCore = "2"
+Libz = "1"
+julia = "0.7, 1"
+
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
