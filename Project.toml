@@ -1,6 +1,6 @@
 name = "BBI"
 uuid = "19670fab-07f0-5a41-99c5-c090d774ee27"
-version = "0.2.1"
+version = "0.3.0"
 authors = ["Kenta Sato <bicycle1885@gmail.com>", "Ben J. Ward <benjward@protonmail.com>", "Ciarán O’Mara <CiaranOMara@utas.edu.au>"]
 
 [deps]
