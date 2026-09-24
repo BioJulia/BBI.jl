@@ -4,11 +4,11 @@ version = "0.2.1"
 authors = ["Kenta Sato <bicycle1885@gmail.com>", "Ben J. Ward <benjward@protonmail.com>", "Ciarán O’Mara <CiaranOMara@utas.edu.au>"]
 
 [deps]
-BioCore = "37cfa864-2cd6-5c12-ad9e-b6597d696c81"
+BioGenerics = "47718e42-2ac5-11e9-14af-e5595289c2ea"
 CodecZlib = "944b1d66-785c-5afd-91f1-9de20f533193"
 
 [compat]
-BioCore = "2"
+BioGenerics = "0.1"
 CodecZlib = "0.7"
 julia = "1"
 

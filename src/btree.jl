@@ -103,7 +103,7 @@ function write_btree(stream::IO, chromlist::Vector{Tuple{String,UInt32,UInt32}})
     for (name, id, len) in sort(chromlist, by=x->x[1])  # sort by name
         fill!(key, 0x00)
         @assert sizeof(name) ≤ keysize
-        Mem.copy(key, name, sizeof(name))
+        copyto!(key, 1, codeunits(name), 1, sizeof(name))
         n += write(stream, key, id, len)
     end
 
