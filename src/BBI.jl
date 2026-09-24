@@ -10,7 +10,7 @@
 
 module BBI
 
-import BioCore: Mem
+import BioGenerics
 import CodecZlib
 
 include("header.jl")

@@ -18,3 +18,15 @@ using CodecZlib
     invalid_data = UInt8[0x00, 0x01, 0x02, 0x03]
     @test_throws CodecZlib.ZlibError BBI.uncompress!(decompressed, invalid_data)
 end
+
+@testset "BTree" begin
+    chroms = [("chr1", UInt32(1000)), ("chr2", UInt32(2000)), ("chrX", UInt32(1500))]
+    chromlist_with_ids = BBI.add_chrom_ids(chroms)
+    buf = IOBuffer()
+    BBI.write_btree(buf, chromlist_with_ids)
+    
+    btree = BBI.BTree(seekstart(buf), 0)
+    loaded = BBI.chromlist(btree)
+    @test length(loaded) == 3
+    @test loaded == sort(chromlist_with_ids, by=first)
+end
