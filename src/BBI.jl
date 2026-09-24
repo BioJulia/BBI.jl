@@ -11,7 +11,7 @@
 module BBI
 
 import BioCore: Mem
-import Libz
+import CodecZlib
 
 include("header.jl")
 include("summary.jl")
