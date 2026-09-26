@@ -3,6 +3,7 @@
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Latest Release](https://img.shields.io/github/release/BioJulia/BBI.jl.svg)](https://github.com/BioJulia/BBI.jl/releases/latest)
 [![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/BioJulia/BBI.jl/blob/master/LICENSE)
+[![DOI](https://zenodo.org/badge/152173456.svg)](https://zenodo.org/badge/latestdoi/152173456)
 [![Stable documentation](https://img.shields.io/badge/docs-stable-blue.svg)](https://biojulia.github.io/BBI.jl/stable)
 [![Latest documentation](https://img.shields.io/badge/docs-dev-blue.svg)](https://biojulia.github.io/BBI.jl/dev/)
 [![Join the chat at https://gitter.im/BioJulia/BBI.jl](https://badges.gitter.im/BioJulia/BBI.jl.svg)](https://gitter.im/BioJulia/BBI.jl)
